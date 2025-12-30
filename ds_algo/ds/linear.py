@@ -9,7 +9,7 @@ Functions
 - update (done)
 - delete (done)
 - sort
-  - quick sort
+  - quick sort (done)
   - merge sort
   - bubble sort
   - insertion sort
@@ -50,10 +50,7 @@ class DynamicArray:
     new_capacity = self.capacity * 2
     new_buffer = [None] * new_capacity
 
-    for i in range(self.size):
-      new_buffer[i] = self.buffer[i]
-
-    self.buffer = new_buffer
+    self.buffer.append(new_buffer)
     self.capacity = new_capacity
 
 
